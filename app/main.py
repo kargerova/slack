@@ -48,7 +48,7 @@ def obtain_ticket_blocks(ack, say, body, logger):
             "plain_text_input-action-ticket_text"
         ]["value"]
 
-        logger.info(user_name, ticket_type, ticket_subject, ticket_text, sep="\n")
+        logger.info(user_name, ticket_type, ticket_subject, ticket_text)
         say(text=':ticket: OK')
     except Exception as e:
         logger.error(e)
